@@ -21,6 +21,7 @@ void btn_callback(void) {
     g_str[i + 1] = NULLL;
     delay_ms(50);
     gfx_mono_draw_string(g_str, 0, 0, &sysfont);
+    
   }
 }
 
