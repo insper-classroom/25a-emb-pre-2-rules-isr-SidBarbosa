@@ -1,8 +1,5 @@
 #include "asf.h"
 
-int g_cnt = 0;
-char g_str[10];
-int batata;
 volatile int btn_flag = 0;
 
 
@@ -11,13 +8,16 @@ volatile int btn_flag = 0;
 // increases when the button is pressed.
 
 void btn_callback(void){
-  printf("btn pressed \n");
   btn_flag = 1;
 }
 
 void main(void) {
   // ...
   stdio_init_all();
+  int g_cnt = 0;
+  char g_str[10];
+  int batata;
+
 
 
   batata = batata + 1;
